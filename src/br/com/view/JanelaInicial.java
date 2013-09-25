@@ -55,11 +55,9 @@ public class JanelaInicial extends javax.swing.JFrame {
         jMenuItem1.setText("jMenuItem1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(800, 600));
         setMinimumSize(new java.awt.Dimension(800, 600));
-        setPreferredSize(new java.awt.Dimension(800, 600));
 
-        btPedidos.setBackground(new java.awt.Color(0, 153, 255));
+        btPedidos.setBackground(new java.awt.Color(102, 102, 102));
         btPedidos.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Escolha a Opção", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 0, 18))); // NOI18N
         btPedidos.setMaximumSize(new java.awt.Dimension(800, 600));
         btPedidos.setMinimumSize(new java.awt.Dimension(800, 600));
@@ -130,7 +128,7 @@ public class JanelaInicial extends javax.swing.JFrame {
                     .addComponent(jButton7)
                     .addComponent(btPCP)
                     .addComponent(btFinanceiro))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 143, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(btRH)
                 .addGap(93, 93, 93))
         );
@@ -165,7 +163,9 @@ public class JanelaInicial extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(btPedidos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(btPedidos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 137, Short.MAX_VALUE))
         );
 
         pack();
