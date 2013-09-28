@@ -33,13 +33,13 @@ public class JanelaInicial extends javax.swing.JFrame {
         jMenu3 = new javax.swing.JMenu();
         jMenu4 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
-        btPedidos = new javax.swing.JPanel();
+        PainelFundo = new javax.swing.JPanel();
         btBiotipo = new javax.swing.JButton();
         btFaccao = new javax.swing.JButton();
         btFinanceiro = new javax.swing.JButton();
         btPCP = new javax.swing.JButton();
         btEstoque = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
+        btPedidos = new javax.swing.JButton();
         btRH = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
@@ -57,10 +57,11 @@ public class JanelaInicial extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(800, 600));
 
-        btPedidos.setBackground(new java.awt.Color(102, 102, 102));
-        btPedidos.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Escolha a Opção", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 0, 18))); // NOI18N
-        btPedidos.setMaximumSize(new java.awt.Dimension(800, 600));
-        btPedidos.setMinimumSize(new java.awt.Dimension(800, 600));
+        PainelFundo.setBackground(new java.awt.Color(102, 102, 102));
+        PainelFundo.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Escolha a Opção", 2, 0, new java.awt.Font("Arial", 0, 18))); // NOI18N
+        PainelFundo.setMaximumSize(new java.awt.Dimension(800, 600));
+        PainelFundo.setMinimumSize(new java.awt.Dimension(800, 600));
+        PainelFundo.setPreferredSize(new java.awt.Dimension(800, 600));
 
         btBiotipo.setText("Biotipo");
 
@@ -82,53 +83,53 @@ public class JanelaInicial extends javax.swing.JFrame {
             }
         });
 
-        jButton7.setText("Pedidos");
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
+        btPedidos.setText("Pedidos");
+        btPedidos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7ActionPerformed(evt);
+                btPedidosActionPerformed(evt);
             }
         });
 
         btRH.setText("RH");
 
-        javax.swing.GroupLayout btPedidosLayout = new javax.swing.GroupLayout(btPedidos);
-        btPedidos.setLayout(btPedidosLayout);
-        btPedidosLayout.setHorizontalGroup(
-            btPedidosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, btPedidosLayout.createSequentialGroup()
+        javax.swing.GroupLayout PainelFundoLayout = new javax.swing.GroupLayout(PainelFundo);
+        PainelFundo.setLayout(PainelFundoLayout);
+        PainelFundoLayout.setHorizontalGroup(
+            PainelFundoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PainelFundoLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(btPedidosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(PainelFundoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(btBiotipo, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btFinanceiro))
                 .addGap(256, 256, 256)
-                .addGroup(btPedidosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(btPedidosLayout.createSequentialGroup()
+                .addGroup(PainelFundoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(PainelFundoLayout.createSequentialGroup()
                         .addComponent(btPCP, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 231, Short.MAX_VALUE)
-                        .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, btPedidosLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 211, Short.MAX_VALUE)
+                        .addComponent(btPedidos, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, PainelFundoLayout.createSequentialGroup()
                         .addComponent(btRH, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, btPedidosLayout.createSequentialGroup()
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, PainelFundoLayout.createSequentialGroup()
                         .addComponent(btEstoque, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(btFaccao, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(71, 71, 71))
         );
-        btPedidosLayout.setVerticalGroup(
-            btPedidosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(btPedidosLayout.createSequentialGroup()
+        PainelFundoLayout.setVerticalGroup(
+            PainelFundoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(PainelFundoLayout.createSequentialGroup()
                 .addGap(93, 93, 93)
-                .addGroup(btPedidosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(PainelFundoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btEstoque)
                     .addComponent(btFaccao)
                     .addComponent(btBiotipo))
                 .addGap(171, 171, 171)
-                .addGroup(btPedidosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton7)
+                .addGroup(PainelFundoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btPedidos)
                     .addComponent(btPCP)
                     .addComponent(btFinanceiro))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 143, Short.MAX_VALUE)
                 .addComponent(btRH)
                 .addGap(93, 93, 93))
         );
@@ -140,9 +141,11 @@ public class JanelaInicial extends javax.swing.JFrame {
             }
         });
 
+        jMenuItem2.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, java.awt.event.InputEvent.ALT_MASK | java.awt.event.InputEvent.CTRL_MASK));
         jMenuItem2.setText("Sobre");
         jMenu1.add(jMenuItem2);
 
+        jMenuItem3.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F4, java.awt.event.InputEvent.ALT_MASK));
         jMenuItem3.setText("Sair");
         jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -159,21 +162,21 @@ public class JanelaInicial extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(btPedidos, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(PainelFundo, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(btPedidos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 137, Short.MAX_VALUE))
+                .addComponent(PainelFundo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+    private void btPedidosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btPedidosActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton7ActionPerformed
+    }//GEN-LAST:event_btPedidosActionPerformed
 
     private void jMenu1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu1ActionPerformed
        // TODO add your handling code here:
@@ -197,14 +200,14 @@ public class JanelaInicial extends javax.swing.JFrame {
      */
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel PainelFundo;
     private javax.swing.JButton btBiotipo;
     private javax.swing.JButton btEstoque;
     private javax.swing.JButton btFaccao;
     private javax.swing.JButton btFinanceiro;
     private javax.swing.JButton btPCP;
-    private javax.swing.JPanel btPedidos;
+    private javax.swing.JButton btPedidos;
     private javax.swing.JButton btRH;
-    private javax.swing.JButton jButton7;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
