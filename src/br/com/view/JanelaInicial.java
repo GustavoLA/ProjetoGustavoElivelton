@@ -184,7 +184,8 @@ public class JanelaInicial extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem3ActionPerformed
 
     private void btEstoqueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btEstoqueActionPerformed
-        // TODO add your handling code here:
+        JanelaEstoque je = new JanelaEstoque();
+                je.setVisible(true);
     }//GEN-LAST:event_btEstoqueActionPerformed
 
     private void btPCPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btPCPActionPerformed
