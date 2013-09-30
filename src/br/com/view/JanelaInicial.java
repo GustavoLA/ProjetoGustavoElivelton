@@ -58,16 +58,19 @@ public class JanelaInicial extends javax.swing.JFrame {
         setMinimumSize(new java.awt.Dimension(800, 600));
 
         PainelFundo.setBackground(new java.awt.Color(102, 102, 102));
-        PainelFundo.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Escolha a Opção", 2, 0, new java.awt.Font("Arial", 0, 18))); // NOI18N
+        PainelFundo.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Escolha a Opção", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 0, 18))); // NOI18N
         PainelFundo.setMaximumSize(new java.awt.Dimension(800, 600));
         PainelFundo.setMinimumSize(new java.awt.Dimension(800, 600));
         PainelFundo.setPreferredSize(new java.awt.Dimension(800, 600));
 
+        btBiotipo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/f.png"))); // NOI18N
         btBiotipo.setText("Biotipo");
 
         btFaccao.setText("Facção");
 
+        btFinanceiro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/a.png"))); // NOI18N
         btFinanceiro.setText("Financeiro");
+        btFinanceiro.setAutoscrolls(true);
 
         btPCP.setText("PCP");
         btPCP.addActionListener(new java.awt.event.ActionListener() {
@@ -76,13 +79,16 @@ public class JanelaInicial extends javax.swing.JFrame {
             }
         });
 
+        btEstoque.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/b.png"))); // NOI18N
         btEstoque.setText("Estoque");
+        btEstoque.setAutoscrolls(true);
         btEstoque.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btEstoqueActionPerformed(evt);
             }
         });
 
+        btPedidos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/u.png"))); // NOI18N
         btPedidos.setText("Pedidos");
         btPedidos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -90,30 +96,29 @@ public class JanelaInicial extends javax.swing.JFrame {
             }
         });
 
+        btRH.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/RH.png"))); // NOI18N
         btRH.setText("RH");
 
         javax.swing.GroupLayout PainelFundoLayout = new javax.swing.GroupLayout(PainelFundo);
         PainelFundo.setLayout(PainelFundoLayout);
         PainelFundoLayout.setHorizontalGroup(
             PainelFundoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PainelFundoLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(PainelFundoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btBiotipo, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btFinanceiro))
-                .addGap(256, 256, 256)
+            .addGroup(PainelFundoLayout.createSequentialGroup()
+                .addGap(26, 26, 26)
                 .addGroup(PainelFundoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(btRH, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(PainelFundoLayout.createSequentialGroup()
-                        .addComponent(btPCP, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 211, Short.MAX_VALUE)
-                        .addComponent(btPedidos, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, PainelFundoLayout.createSequentialGroup()
-                        .addComponent(btRH, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, PainelFundoLayout.createSequentialGroup()
-                        .addComponent(btEstoque, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btFaccao, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(PainelFundoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(btFinanceiro, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btBiotipo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(178, 178, 178)
+                        .addGroup(PainelFundoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(btEstoque, javax.swing.GroupLayout.DEFAULT_SIZE, 117, Short.MAX_VALUE)
+                            .addComponent(btPCP, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 162, Short.MAX_VALUE)
+                .addGroup(PainelFundoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(btPedidos, javax.swing.GroupLayout.DEFAULT_SIZE, 117, Short.MAX_VALUE)
+                    .addComponent(btFaccao, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(71, 71, 71))
         );
         PainelFundoLayout.setVerticalGroup(
@@ -121,17 +126,17 @@ public class JanelaInicial extends javax.swing.JFrame {
             .addGroup(PainelFundoLayout.createSequentialGroup()
                 .addGap(93, 93, 93)
                 .addGroup(PainelFundoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btEstoque)
-                    .addComponent(btFaccao)
-                    .addComponent(btBiotipo))
-                .addGap(171, 171, 171)
+                    .addComponent(btFaccao, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btBiotipo)
+                    .addComponent(btEstoque))
+                .addGap(165, 165, 165)
                 .addGroup(PainelFundoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btPedidos)
-                    .addComponent(btPCP)
-                    .addComponent(btFinanceiro))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 143, Short.MAX_VALUE)
+                    .addComponent(btPCP, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btFinanceiro)
+                    .addComponent(btPedidos))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 121, Short.MAX_VALUE)
                 .addComponent(btRH)
-                .addGap(93, 93, 93))
+                .addGap(67, 67, 67))
         );
 
         jMenu1.setText("Opções");
